@@ -1,0 +1,165 @@
+/* ================= About ================= */
+
+.AboutOfHome {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 40px;
+  gap: 40px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  background-color: #000; 
+  color: #fff; 
+}
+
+.AboutOfHome .CompanyLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-width: 220px;
+}
+
+.AboutOfHome .CompanyLogo img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.AboutOfHome .IconInstaWhats {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.AboutOfHome .IconInstaWhats a {
+  font-size: 36px; 
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none; 
+}
+
+.AboutOfHome .IconInstaWhats a:hover {
+  transform: scale(1.3);
+}
+
+.AboutOfHome .IconInstaWhats .InstaIcon a:hover {
+  color: #E1306C;
+}
+
+.AboutOfHome .IconInstaWhats .WhatsappIcon a:hover {
+  color: #25D366;
+}
+
+.AboutOfHome .TalkToUs {
+  margin-top: 20px;
+}
+
+.AboutOfHome .TalkToUs h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.AboutOfHome .TalkToUs h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  margin: 4px 0;
+  color: #ccc;
+}
+
+.AboutOfHome .Business,
+.AboutOfHome .Information {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.AboutOfHome .Business h2,
+.AboutOfHome .Information h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.AboutOfHome .Business h3,
+.AboutOfHome .Information h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  margin: 4px 0;
+  color: #ccc;
+}
+
+.AboutOfHome .Business a,
+.AboutOfHome .Information a {
+  color: inherit; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Playfair Display', serif;
+}
+
+.AboutOfHome .Business a:hover,
+.AboutOfHome .Information a:hover {
+  color: #ffffff; 
+}
+
+@media (max-width: 1024px) {
+  .AboutOfHome {
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .AboutOfHome .CompanyLogo img {
+    width: 100px;
+  }
+
+  .AboutOfHome .IconInstaWhats a {
+    font-size: 30px;
+  }
+
+  .AboutOfHome .TalkToUs h2,
+  .AboutOfHome .Business h2,
+  .AboutOfHome .Information h2 {
+    font-size: 18px;
+  }
+
+  .AboutOfHome .TalkToUs h3,
+  .AboutOfHome .Business h3,
+  .AboutOfHome .Information h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .AboutOfHome {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .AboutOfHome .CompanyLogo,
+  .AboutOfHome .TalkToUs,
+  .AboutOfHome .Business,
+  .AboutOfHome .Information {
+    width: 100%;
+  }
+
+  .AboutOfHome .IconInstaWhats {
+    justify-content: center;
+  }
+
+  .AboutOfHome .CompanyLogo img {
+    width: 90px;
+  }
+
+  .AboutOfHome .IconInstaWhats a {
+    font-size: 28px;
+  }
+}
+

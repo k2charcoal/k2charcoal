@@ -1,0 +1,136 @@
+/* ================= CONTAINER ================= */
+
+.SomeImg {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+
+/* ================= CARD ================= */
+
+.SomeImg .ArtCard {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* ================= IMAGE ================= */
+
+.SomeImg .ArtCard img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 6px;
+  border: 10px solid #3a3a3a;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+/* ================= BUTTON WRAPPER ================= */
+
+.SomeImg .ArtCard .ButtonParent {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ================= BUTTON ================= */
+
+.SomeImg .ArtCard button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 12px 20px;
+  min-width: 140px;
+
+  background-color: #4CAF50;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.SomeImg .ArtCard button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* ================= LINK INSIDE BUTTON ================= */
+
+.SomeImg .ArtCard button a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.SomeImg .ArtCard button a:visited,
+.SomeImg .ArtCard button a:active,
+.SomeImg .ArtCard button a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .SomeImg {
+    gap: 80px;
+  }
+
+  .SomeImg .ArtCard img {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .SomeImg {
+    gap: 50px;
+  }
+
+  .SomeImg .ArtCard img {
+    max-width: 180px;
+  }
+
+  .SomeImg .ArtCard button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .SomeImg {
+    gap: 20px;
+  }
+
+  .SomeImg .ArtCard img {
+    max-width: 140px;
+  }
+
+  .SomeImg .ArtCard .ButtonParent {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .SomeImg .ArtCard button {
+    width: 100%;
+  }
+}

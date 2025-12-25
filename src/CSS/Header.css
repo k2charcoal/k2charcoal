@@ -1,0 +1,192 @@
+/* ================= TOP HEADER ================= */
+.MainHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background: #103a2c;
+  box-sizing: border-box;
+}
+
+.EmailID a {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.EmailID a:hover {
+  color: #bdbdbd;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.InstaWhatsParent {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.InstagramID a,
+.Whatsapp a {
+  font-size: 32px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.InstagramID a:hover {
+  color: #E1306C;
+  transform: scale(1.15);
+}
+
+.Whatsapp a:hover {
+  color: #25D366;
+  transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+  .MainHeader {
+    flex-direction: row;       
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+  }
+
+  .EmailID a {
+    font-size: 14px;
+  }
+
+  .InstaWhatsParent {
+    gap: 16px; 
+  }
+
+  .InstagramID a,
+  .Whatsapp a {
+    font-size: 26px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .MainHeader {
+    padding: 10px 30px;
+  }
+
+  .InstagramID a,
+  .Whatsapp a {
+    font-size: 30px;
+  }
+}
+
+
+
+/* ================= MIDDLE HEADER ================= */
+
+.MiddleHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background: #103a2c;
+  box-sizing: border-box;
+}
+
+/* Left side (Logo + Name) */
+.LeftBrand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Logo */
+.MiddleHeader .Image img {
+  width: 90px;
+  height: auto;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* Brand Name */
+.MiddleHeader .Name h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Navigation Menu */
+.NavMenu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.NavMenu a {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* Hover underline */
+.NavMenu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.3s ease;
+}
+
+.NavMenu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .MiddleHeader {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 20px;
+  }
+
+  .LeftBrand {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .MiddleHeader .Image img {
+    width: 55px;
+  }
+
+  .MiddleHeader .Name h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+
+  .NavMenu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .MiddleHeader .Name h1 {
+    font-size: 34px;
+  }
+
+  .NavMenu {
+    gap: 20px;
+  }
+}

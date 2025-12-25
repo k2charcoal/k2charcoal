@@ -1,0 +1,151 @@
+/* ================= ALL WORK IMAGES ================= */
+
+.MyAllWorkImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+  margin: 80px 0;
+}
+
+/* ================= ART CARD ================= */
+
+.MyArtCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ================= IMAGE ================= */
+
+.MyArtCard img {
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 8px;
+  border: 8px solid #2f2f2f;
+
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.MyArtCard img:hover {
+  transform: scale(1.03);
+}
+
+/* ================= BUTTON AREA ================= */
+
+.MyButtonOfImg {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ================= BUTTON ================= */
+
+.MyButtonOfImg button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 18px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ================= LINK INSIDE BUTTON (FIX) ================= */
+
+.MyButtonOfImg button a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* Remove blue / underline in all states */
+.MyButtonOfImg button a:visited,
+.MyButtonOfImg button a:hover,
+.MyButtonOfImg button a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ================= BUTTON HOVER ================= */
+
+.MyButtonOfImg button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+/* ================= ICON ================= */
+
+.MyButtonOfImg button svg {
+  font-size: 18px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .MyAllWorkImg {
+    gap: 60px;
+  }
+
+  .MyArtCard img {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .MyAllWorkImg {
+    gap: 2px;
+  }
+
+  .MyArtCard img {
+    width: 180px;
+  }
+
+  .MyButtonOfImg {
+    flex-direction: column;
+  }
+
+  .MyButtonOfImg button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .MyAllWorkImg {
+    gap: 2px;
+  }
+
+  .MyArtCard img {
+    width: 150px;
+  }
+
+  .MyButtonOfImg {
+    flex-direction: column;
+  }
+
+  .MyButtonOfImg button {
+    width: 100%;
+  }
+}

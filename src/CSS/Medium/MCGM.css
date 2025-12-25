@@ -1,0 +1,66 @@
+/* ================= MEDIUM SECTION ================= */
+
+.MediumMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #103a2c 0%, #0b2a20 100%);
+  box-sizing: border-box;
+}
+
+.MediumMain .NavMenu {
+  display: flex;
+  gap: 150px;
+  padding: 18px 32px;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+}
+
+.MediumMain .NavMenu a {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  padding: 6px 2px;
+  transition: color 0.3s ease;
+}
+
+/* underline hover effect */
+.MediumMain .NavMenu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.MediumMain .NavMenu a:hover::after {
+  width: 100%;
+}
+
+.MediumMain .NavMenu a:hover {
+  color: #d6e7df;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .MediumMain .NavMenu {
+    flex-direction: column;
+    gap: 18px;
+    padding: 22px 26px;
+    border-radius: 22px;
+  }
+
+  .MediumMain .NavMenu a {
+    font-size: 16px;
+  }
+}

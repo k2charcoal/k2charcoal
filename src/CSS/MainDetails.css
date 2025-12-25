@@ -1,0 +1,118 @@
+/* ================= MAIN ================= */
+.GThorMain {
+  width: 100%;
+  /* min-height: 100vh; */
+  background: #ffffff;
+  color: #000000;
+  padding: 30px;
+  box-sizing: border-box;
+  font-family: 'Cinzel', serif;
+}
+
+/* ================= LOGO ================= */
+.GThorMain .Logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.GThorMain .Logo img {
+  width: 120px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.GThorMain .Logo h2 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+/* ================= DETAIL ================= */
+.GThorMain .Detail {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.ThorDetails p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ================= IMAGE BOX ================= */
+.GThorMain .ThorImgBox {
+  position: relative;
+}
+
+.GThorMain .ThorImgBox img {
+  width:250px;
+  border: 5px solid;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* ================= BACK BUTTON ================= */
+.GThorMain .BackBtn {
+  position: absolute;
+  top: 5px;      
+  left: -50px;      
+  font-size: 38px;
+  color: #000000;
+  cursor: pointer;
+  background: none;       
+  border-radius: 0;       
+  transition: color 0.3s, transform 0.3s;
+}
+
+.GThorMain .BackBtn:hover {
+  color: #103a2c;        
+  transform: scale(1.1);
+}
+
+/* ================= DETAILS ================= */
+.GThorMain .ThorDetails {
+  max-width: 400px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ================= BUTTONS ================= */
+.GThorMain .Button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.GThorMain .Button a {
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* Whatsapp */
+.GThorMain .Button .Whatsapp {
+  background: #25D366;
+}
+
+.GThorMain .Button .Whatsapp:hover {
+  background: #1ebe5d;
+}
+
+/* Instagram */
+.GThorMain .Button .Instagram {
+  background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+}
+
+.GThorMain .Button .Instagram:hover {
+  opacity: 0.85;
+}

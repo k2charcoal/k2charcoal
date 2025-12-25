@@ -1,0 +1,150 @@
+/* ================= ORDER PROCESS PAGE ================= */
+
+.OrderProcess {
+  width: 100%;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+/* ================= CONTENT BOX ================= */
+
+.OrderProcess p {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 60px 50px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 1.9;
+  color: #333;
+
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  margin: 0;
+}
+
+/* Paragraph spacing */
+.OrderProcess p br + br {
+  display: block;
+  margin-top: 18px;
+}
+
+/* ================= BUTTON WRAPPER ================= */
+
+.OrderProcess .ButtonGroup {
+  margin-top: 35px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ================= BASE BUTTON ================= */
+
+.OrderProcess button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* Anchor styled as button */
+.OrderProcess button a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 14px 26px;
+  border-radius: 50px;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Icon size */
+.OrderProcess button a svg {
+  font-size: 20px;
+}
+
+/* Remove blue underline states */
+.OrderProcess button a:visited,
+.OrderProcess button a:active,
+.OrderProcess button a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ================= WHATSAPP BUTTON ================= */
+
+.OrderProcess button a[href*="wa.me"] {
+  background-color: #25D366;
+}
+
+.OrderProcess button a[href*="wa.me"]:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* ================= INSTAGRAM BUTTON ================= */
+
+.OrderProcess button a[href*="instagram.com"] {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+}
+
+.OrderProcess button a[href*="instagram.com"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(214, 41, 118, 0.45);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .OrderProcess {
+    padding: 60px 30px;
+  }
+
+  .OrderProcess p {
+    padding: 50px 35px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .OrderProcess {
+    padding: 90px 20px 50px;
+  }
+
+  .OrderProcess p {
+    padding: 40px 22px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .OrderProcess .ButtonGroup {
+    flex-direction: column;
+  }
+
+  .OrderProcess button a {
+    width: 100%;
+    font-size: 15px;
+  }
+}
