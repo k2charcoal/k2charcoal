@@ -130,11 +130,11 @@
 
 @media (max-width: 600px) {
   .OrderProcess {
-    padding: 90px 20px 50px;
+    padding: 30px 20px 30px;
   }
 
   .OrderProcess p {
-    padding: 40px 22px;
+    padding: 20px 20px;
     font-size: 16px;
     line-height: 1.8;
   }
