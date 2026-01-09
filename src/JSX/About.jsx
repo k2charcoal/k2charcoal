@@ -5,6 +5,8 @@ import FooterAbout from './FooterAbout';
 import AboutMe from '../Asset/Me.jpg'
 import '../CSS/About.css'
 
+import signature from '../Asset/signature.png'
+
 const About = () => {
   return (
     <>
@@ -36,7 +38,7 @@ const About = () => {
             <br />
             Krish Kalathiya
             <br />
-            K2.CHARCOAL
+            <img src={signature} alt="Sugnasture" />
           </p>
         </div>
         <FooterAbout />
@@ -45,8 +47,3 @@ const About = () => {
 }
 
 export default About
-
-
-
-
-

@@ -85,6 +85,17 @@
   margin-top: 18px;
 }
 
+/* ================= SIGNATURE IMAGE ================= */
+/* Added for signature below "Krish Kalathiya" */
+
+.AbooutMe p img {
+  display: block;
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
 /* ================= LARGE SCREENS ================= */
 
 @media (min-width: 1400px) {
@@ -123,6 +134,10 @@
   .AbooutMe {
     padding: 5px;
   }
+
+  .AbooutMe p img {
+    max-width: 150px;
+  }
 }
 
 /* ================= SMALL MOBILES ================= */
@@ -143,5 +158,9 @@
 
   .AbooutMe p {
     line-height: 1.8;
+  }
+
+  .AbooutMe p img {
+    max-width: 130px;
   }
 }
